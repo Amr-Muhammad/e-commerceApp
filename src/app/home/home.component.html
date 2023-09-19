@@ -1,0 +1,9 @@
+    <div class="row g-4">
+        <div *ngFor="let item of productsArray" class="col-md-2">
+            <div>
+                <img [src]="item.imageCover" class="w-100 mx-auto m-3" alt="">
+                <h6>{{item.title}}</h6>
+                <p>{{item.description.split(' ',3).join(' ')}}</p>
+            </div>
+        </div>
+    </div>
